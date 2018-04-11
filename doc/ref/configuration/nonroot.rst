@@ -14,8 +14,7 @@ which is why the master has remained as root by default.
 .. note::
 
     Some of Salt's operations cannot execute correctly when the master is not
-    running as root, specifically the pam external auth system, as this system
-    needs root access to check authentication.
+    running as root.
 
 As of Salt 0.9.10 it is possible to run Salt as a non-root user. This can be
 done by setting the :conf_master:`user` parameter in the master configuration

@@ -9,8 +9,9 @@ command authorization to any external authentication system, such as PAM or LDAP
 
 .. note::
 
-    eAuth using the PAM external auth system requires salt-master to be run as
-    root as this system needs root access to check authentication.
+    In case when salt-master is running on unprivileged user and eAuth use PAM
+    external auth system, salt-master user must be member of shadow group.
+    This is required to check authentication from user other then root.
 
 External Authentication System Configuration
 ============================================
